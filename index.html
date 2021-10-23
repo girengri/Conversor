@@ -6,39 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Conversor Divisas</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
 </head>
 
 <body>
     <main>
         <h1>Convertidor de Divisas</h1>
         <img src="images/Currency_Outline.png" alt="divisas" title="divisas" />
-        <form>
-            <input type="number" id="cantidad" placeholder="Cantidad de Dinero:" required />
-            <br />
-            <br />
-            <select id="selector1" required>
-                <option value="seleccione" disabled selected>Elige tu moneda</option>
-                <option value="dolar">Dolar</option>
-                <option value="pesoM">Peso Mexicano</option>
-                <option value="pesoC">Peso Colombiano</option>
-                <option value="euro">Euro</option>
-                <option value="libraE">Libra Esterlina</option>
-            </select>
+        <div class="container">
+            <form>
+                <input type="number" id="cantidad" placeholder="Cantidad de Dinero:" required />
+                <br />
+                <br />
+                <select id="selector1" required>
+                    <option value="seleccione" disabled selected>
+                        Elige tu moneda
+                    </option>
+                    <option value="dolar">Dolar</option>
+                    <option value="pesoM">Peso Mexicano</option>
+                    <option value="pesoC">Peso Colombiano</option>
+                    <option value="euro">Euro</option>
+                    <option value="libraE">Libra Esterlina</option>
+                </select>
 
-            <select id="selector2" required>
-                <option value="seleccione" disabled selected>Elige tu moneda</option>
-                <option value="dolar">Dolar</option>
-                <option value="pesoM">Peso Mexicano</option>
-                <option value="pesoC">Peso Colombiano</option>
-                <option value="euro">Euro</option>
-                <option value="libraE">Libra Esterlina</option>
-            </select>
+                <select id="selector2" required>
+                    <option value="seleccione" disabled selected>
+                        Elige tu moneda
+                    </option>
+                    <option value="dolar">Dolar</option>
+                    <option value="pesoM">Peso Mexicano</option>
+                    <option value="pesoC">Peso Colombiano</option>
+                    <option value="euro">Euro</option>
+                    <option value="libraE">Libra Esterlina</option>
+                </select>
 
-            <button id="convertir">Convertir</button>
-            <br />
-            <br />
-            <input id="resultados" type="number" readonly placeholder="Resultado" />
-        </form>
+                <button id="convertir">Convertir</button>
+                <br />
+                <br />
+                <input id="resultados" type="number" readonly placeholder="Resultado" />
+            </form>
+        </div>
     </main>
     <script src="js/scripts.js"></script>
 </body>

@@ -1,0 +1,52 @@
+:root {
+  --color-fondo: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  --color-titulo: #fb8500;
+  --color-input: #023047;
+  --color-secundario: #fff;
+  --color-boton: #219ebc;
+  --borde-form: #8ecae6;
+  --color-form: #219ebc;
+}
+
+body {
+  background-image: var(--color-fondo);
+}
+img {
+  width: 20%;
+  margin-bottom: 60px;
+  padding: 0%;
+  display: block;
+  margin: auto;
+}
+
+form {
+  text-align: center;
+  border: 4px solid var(--borde-form);
+  padding: 1%;
+  margin-top: 0px;
+  font-family: "Anton", sans-serif;
+  margin-bottom: 50px;
+  background-color: var(--color-form);
+}
+h1 {
+  text-align: center;
+  color: var(--color-titulo);
+  font-family: "Anton", sans-serif;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+input:focus,
+select:focus {
+  background-color: var(--color-input);
+  color: var(--color-secundario);
+}
+button {
+  background-color: var(--color-input);
+  color: var(--color-secundario);
+  cursor: pointer;
+}
+input,
+select,
+button {
+  padding: 10px;
+}

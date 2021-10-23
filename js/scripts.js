@@ -51,6 +51,10 @@ datosFormulario.addEventListener("submit", (event) => {
          resultadoConversion = (cantidadIngresada * 0.85).toFixed(2);
       } else if (divisasUno == "libraE" && divisasDos == "euro") {
          resultadoConversion = (cantidadIngresada / 0.85).toFixed(2);
+      } else if (divisasUno == "seleccione" && divisasDos == "seleccione") {
+         resultadoConversion = alert(
+            "Debe elegir el tipo de monedas para la conversion"
+         );
       } else if (divisasUno === divisasDos) {
          resultadoConversion = alert(
             "La conversion de monedas no puede ser entre monedas iguales"
